@@ -92,6 +92,133 @@ a {
     padding-top: 14px;
 }
 
+/****** Section info ***********/
+.info {
+    margin: 30px 0 35px;
+}
+/****** Title ***********/
+.title {
+    margin-bottom: 35px;
+}
+
+.title h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/****** Search Bar ***********/
+.search-container {
+    width: 377px;
+    height: 49px;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.icon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0 0 15px;
+}
+
+.icon i {
+    width: 14px;
+    height: 18px;
+    color: #000;
+}
+
+.search-container input[type="text"] {
+    border: 1px solid var(--main-bg-color);
+    width: 195px;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search-container button[type="submit"] {
+    width: 132px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+/****** Filter ***********/
+.filter-container {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-container h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter-choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 17px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+}
+
+.filter-choice:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+.filter-choice span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.fa-money-bill-wave {
+    font-size: 16px;
+}
+
+.fa-heart {
+    font-size: 18px;
+}
+
+.fa-fire,
+.fa-person {
+    font-size: 20px;
+}
+
+/****** Infos ***********/
+.info-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+}
+.fa-info {
+    font-size: 10px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -108,6 +235,14 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    margin-top: 30px;
+}
+
+.hebergements-cards .card {
+
 }
 
 /****** Populaires ***********/
