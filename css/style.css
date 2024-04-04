@@ -97,6 +97,7 @@ a {
 .info {
     margin: 30px 0 35px;
 }
+
 /****** Title ***********/
 .title {
     margin-bottom: 35px;
@@ -225,6 +226,7 @@ a {
     border-radius: 50%;
     border: 1px solid #d9d9d9;
 }
+
 .fa-info {
     font-size: 10px;
 }
@@ -249,13 +251,9 @@ a {
 
 .hebergements-cards {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.hebergements-cards .card {
-    width: 240px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .hebergements-cards img {
@@ -339,14 +337,9 @@ a {
 }
 
 .activites-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.activites .card {
-    width: 297px;
-    padding: 0;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .activites img {
@@ -412,10 +405,6 @@ footer {
         width: 100%;
     }
 
-    .hebergements-cards .card {
-        width: 258px;
-    }
-
     /****** Populaires ***********/
     .populaires {
         width: 100%;
@@ -441,10 +430,6 @@ footer {
     }
 
     /****** Activités ***********/
-    .activites .card {
-        width: 193px;
-    }
-
     .activites img {
         height: 200px;
     }
@@ -538,5 +523,80 @@ footer {
     }
 
     /****** Filter ***********/
+    .filter-choice-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
+    .filter-choice {
+        box-sizing: border-box;
+        width: 162px;
+    }
+
+    /****** Infos ***********/
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: #fff;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+
+    /****** Populaires ***********/
+    .populaires {
+        margin-top: 0;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 10px;
+    }
+
+    /****** Hebergements ***********/
+    .hebergements-cards {
+        grid-template: 1fr / auto;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    /****** Activités ***********/
+    .activites img {
+        height: 141px;
+    }
+
+    .activites-cards {
+        display: block;
+    }
+
+    .activites-cards .card-margin {
+        margin-bottom: 15px;
+    }
+
+    .activites .card-subtitle {
+        height: 59px;
+    }
+
+    /****** Footer ***********/
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
 }
