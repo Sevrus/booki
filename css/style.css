@@ -217,18 +217,18 @@ a {
     gap: 10px;
 }
 
-.circle {
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid #d9d9d9;
+.fa-circle {
+    font-size: 24px;
+    color: #d9d9d9;
+    position: relative;
 }
 
 .fa-info {
+    position: absolute;
     font-size: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /****** Hebergements And Populaires ***********/
