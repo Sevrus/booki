@@ -486,7 +486,8 @@ footer {
     /****** Search Bar ***********/
     .search-container {
         position: relative;
-        width: 335px;
+        max-width: 335px;
+        width: 100%;
     }
 
     .search-container input[type="text"] {
